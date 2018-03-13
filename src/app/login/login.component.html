@@ -1,0 +1,104 @@
+    <div class="container-fluid bg-img">
+      <div class="content">
+    <div class="tob3">
+      <div class="tob4">
+<div class="w3-container">
+  
+  <button type="button" onclick="button_click" id="change-color" class="w3-circle "></button>
+  
+ </div>     
+              
+      <div class="tob5">
+          <div class="tob-banner3">
+        <div class="row text-center"><br>
+<h1 class="top-title">MM-Schreibtrainer
+</h1>
+<br>
+<br>
+<div class="li">
+<form > 
+<select id="books" (change)="saverange()">
+  <option value="0"><button>{{kj[0]}}</button> </option>
+  <option value="1"><button>{{kj[1]}}</button> </option>
+  <option value="2"><button>{{kj[2]}}</button> </option>
+  <option value="3"><button>{{kj[3]}}</button> </option>
+  <option value="4"><button>{{kj[4]}}</button> </option>
+  <option value="5"><button>{{kj[5]}}</button> </option>
+  <option value="6"><button>{{kj[6]}}</button> </option>
+  <option value="7"><button>{{kj[7]}}</button> </option>
+  <option value="8"><button>{{kj[8]}}</button> </option>
+  <option value="9"><button>{{kj[9]}}</button> </option>
+  <option value="10"><button>{{kj[10]}}</button> </option>
+
+</select>
+</form></div>
+
+<br>
+  <br>
+  <img src="assets\img\flg1.png" class="tob-img">
+  <img src="assets\img\computer.gif" class="tob-img1" align="top">
+  <p class="txt1 text-right" >Meine bisherigen Arbeiten:</p>
+    <p class="txt2 text-right">Sortiert nach</p>
+
+     <button class="btns">Datum</button>
+     <button class="btns1">Ubgs-Nr</button>
+
+          <div class="col-sm-3">
+
+            
+            <!--<button class="btns">Anmelden</button>-->
+          </div>
+          <div class="col-sm-6">
+            
+          
+          <a href="logout.php"></a>
+          
+          </div>
+          
+        </div>
+      </div>
+    <div class="tob-banner4">
+      <div class="in-content">
+    
+        <div class="row">
+            <div class="col-sm-4">
+                        <span id="side-btn">
+                        <h3 class ="text-center1">Auswahl der Lektion:</h3> <h3 class="text-center">Auswahl der Ubung:</h3>
+           
+                <br> <div *ngFor="let exe of exe;" ><button class="inner-btn1" id="less" value="{{this.exe}}" name="less" (click)="exercise(exe)">
+                  {{this.exe}}
+                </button></div> 
+                    </span>
+                    </div>
+
+
+          <div class="nxtlin">
+            <div class="col-sm-8">
+              <div class="edi">
+             
+            </div>
+                       <div *ngFor="let con of con;" ><button class="inner-btn2" id="less1" value="{{this.con}}" name="less" (click)="ff(con)">
+                  {{this.con}}
+                </button></div>               
+                      
+            </div>
+          </div>
+          </div>
+        <button class="btnsnew1">Lehrer</button>
+             <button class="btnsnew2">Balkeninfo</button>
+             <button class="btnsnew5">Programmende</button>
+             <input type="button" onclick="window.location='calculator.php'" class="btnsnew3" value="I"/>
+                <!--<ul>
+                <li><button class="foo-btn">Lehrer</button></li>
+                <li style="float: right"><button class="foo-btn">I</button></li>
+               <li style="float: right"><button class="foo-btn">Balkeninfo </button></li>
+                 <li style="float: right"><button class="foo-btn">Album</button></li>
+           </ul>-->
+         </div>
+</div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
